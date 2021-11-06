@@ -1,7 +1,7 @@
 <div align="center">
-<h1>kcd-scripts 🛠📦</h1>
+<h1>ajs scripts</h1>
 
-<p>CLI toolbox for common scripts for my projects</p>
+  ## this is a fork
 </div>
 
 ---
@@ -17,15 +17,7 @@
 [![Code of Conduct][coc-badge]][coc]
 <!-- prettier-ignore-end -->
 
-## The problem
 
-I do a bunch of open source and want to make it easier to maintain so many
-projects.
-
-## This solution
-
-This is a CLI that abstracts away all configuration for my open source projects
-for linting, testing, building, and more.
 
 ## Table of Contents
 
@@ -52,27 +44,22 @@ This module is distributed via [npm][npm] which is bundled with [node][node] and
 should be installed as one of your project's `devDependencies`:
 
 ```
-npm install --save-dev kcd-scripts
+npm install --save-dev ajs-scripts
 ```
 
 ## Usage
 
-This is a CLI and exposes a bin called `kcd-scripts`. I don't really plan on
-documenting or testing it super duper well because it's really specific to my
-needs. You'll find all available scripts in `src/scripts`.
+ You'll find all available scripts in `src/scripts`.
 
-This project actually dogfoods itself. If you look in the `package.json`, you'll
-find scripts with `node src {scriptName}`. This serves as an example of some of
-the things you can do with `kcd-scripts`.
 
 ### Overriding Config
 
-Unlike `react-scripts`, `kcd-scripts` allows you to specify your own
+Unlike `react-scripts`, `ajs-scripts` allows you to specify your own
 configuration for things and have that plug directly into the way things work
-with `kcd-scripts`. There are various ways that it works, but basically if you
+with `ajs-scripts`. There are various ways that it works, but basically if you
 want to have your own config for something, just add the configuration and
-`kcd-scripts` will use that instead of it's own internal config. In addition,
-`kcd-scripts` exposes its configuration so you can use it and override only the
+`ajs-scripts` will use that instead of it's own internal config. In addition,
+`ajs-scripts` exposes its configuration so you can use it and override only the
 parts of the config you need to.
 
 This can be a very helpful way to make editor integration work for tools like
